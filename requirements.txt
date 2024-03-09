@@ -1,0 +1,5 @@
+numpy
+cv2
+torchvision
+PIL
+os

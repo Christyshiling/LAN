@@ -1,19 +1,36 @@
 # LAN
 Learnable Automatic Stain Normalization For Histology Image Analysis
+Implementation for the paper: "Learnable Stain Normalization For Histology Image Analysis" [MICCAI 2024]
+## 1. Method Overview
+<img src="./pic/1.png" alt="avatar" style="zoom: 25%;" />
+The "Learnable Automatic Normalization" (LAN) method 
+represents an innovative approach in image processing technology, leveraging 
+deep learning to autonomously adjust normalization parameters, thus overcom
+ing the limitations of traditional normalization techniques. This method employs 
+deep learning models to learn the optimal normalization strategy based on im
+age content and application requirements, facilitating end-to-end training driven 
+directly by task performance. Such an adaptive learning mechanism allows LAN 
+to accommodate various image conditions, including changes in illumination and 
+quality differences, significantly enhancing performance in visual tasks such as 
+recognition, detection, and segmentation. However, this approach demands a 
+high volume of training data to ensure the learned parameters possess broad 
+applicability and robustness. Moreover, the autonomous learning of normaliza
+tion parameters may increase the complexity and duration of model training
+<img src="./pic/2.png" alt="avatar" style="zoom: 67%;" />
 
-## 1、参数设置说明：
-优化函数：第一阶段为Adam，第二阶段为AdamW；
-损失函数：第一阶段为MSE、第二阶段为交叉熵；
-学习率：0.0001；
-Batch size: 64;
-Epoch: 两个阶段均为20;
+## 2. Code Organizations
+baseline_xxx.py, where xxx represents the neural network model;
+main_xxx.py, xxx represents each type of network model as well as improvements to our method;
+gen_hsv_images.py, for generating HSV files;
+ResNet.py, for the ResNet structure code;
+network_v2.py, for the overall model structure;
+utility.py, for methods required during model training;
+train3.py, for the training process of the entire framework;
+reconstruct_image.py, for the model's method of reconstructing images.
 
-## 2、文件说明：
-baseline_xxx.py，其中xxx表示神经网络模型；
-main_xxx.py，xxx表示每种网路模型以及本方法的改进；
-gen_hsv_images.py，为生成HSV文件的方式；
-ResNet.py，为ResNet结构代码；
-network_v2.py，为整体模型的结构；
-utility.py，为模型训练中所需要调用方法；
-train3.py，为整体框架的训练过程；
-reconstruct_image.py，为模型重构图像方式。
+## 3. Set Up the Environmets
+Run
+
+```bash
+pip install -r requirements.txt
+```
