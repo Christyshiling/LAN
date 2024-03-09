@@ -20,14 +20,14 @@ tion parameters may increase the complexity and duration of model training
 
 
 ## 2. Code Organizations
-baseline_xxx.py, where xxx represents the neural network model;
-main_xxx.py, xxx represents each type of network model as well as improvements to our method;
-gen_hsv_images.py, for generating HSV files;
-ResNet.py, for the ResNet structure code;
-network_v2.py, for the overall model structure;
-utility.py, for methods required during model training;
-train3.py, for the training process of the entire framework;
-reconstruct_image.py, for the model's method of reconstructing images.
+baseline_xxx.py, where xxx represents the neural network model;  
+main_xxx.py, xxx represents each type of network model as well as improvements to our method;  
+gen_hsv_images.py, for generating HSV files;  
+ResNet.py, for the ResNet structure code;  
+network_v2.py, for the overall model structure;  
+utility.py, for methods required during model training;  
+train3.py, for the training process of the entire framework;  
+reconstruct_image.py, for the model's method of reconstructing images.  
 
 ## 3. Set Up the Environmets
 Run
