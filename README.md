@@ -18,6 +18,7 @@ applicability and robustness. Moreover, the autonomous learning of normaliza
 tion parameters may increase the complexity and duration of model training
 <img src="./pic/2.png" alt="avatar" style="zoom: 67%;" />
 
+
 ## 2. Code Organizations
 baseline_xxx.py, where xxx represents the neural network model;
 main_xxx.py, xxx represents each type of network model as well as improvements to our method;
