@@ -1,0 +1,31 @@
+1. **Software and Hardware Environment**
+   - Programming Language: Python 3.8
+   - PyTorch: 1.10
+   - Operating System: Windows 10 (64-bit)
+   - GPU: 3090Ti
+   - CPU: i9-12900
+
+2. **Algorithm Implementation**
+   - The implementation follows the process described in the previous flowchart.
+
+3. **Data Preprocessing**
+   - Phase 1: Resize images to 224x224 dimensions for input into the network.
+   - Phase 2: Normalize the data using the model from Phase 1, then enhance image data using RandomHorizontalFlip.
+
+4. **Model Architecture**
+   - Utilizes ResNet18, ResNet50, MobileNet, ViT, and Swin-Transformer, with direct references to the original papers.
+
+5. **Hyperparameter Settings**
+   - Learning Rate: 0.0001 for both phases.
+   - Batch Size: 64 for both phases.
+   - Epochs: 20 for both phases.
+
+6. **Training Details**
+   - Optimizer: Adam in Phase 1 and AdamW in Phase 2.
+   - Loss Function: MSE in Phase 1 and Cross Entropy in Phase 2.
+
+7. **Evaluation Metrics**
+   - Accuracy for classification tasks.
+
+8. **Experimental Results**
+   - As shown in Table 1.
